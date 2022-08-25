@@ -1,0 +1,42 @@
+:root {
+	/*основной цвет текста*/
+	--primary-text-color: #757575;
+	/*вторичный цвет текста*/
+	--secondary-text-color: #212121;
+	/*цвет акцента*/
+	--accent-color: #2196f3;
+	/*белый цвет*/
+	--white-color: #fff;
+
+	/*черный цвет*/
+	--black-color: #000;
+	/*цвет hero-footer */
+	--hero-footer-color: #2f303a;
+	/*тень кнопки в портфолио box-shadow*/
+	--box-shadow-color: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	/*section team background*/
+	--team-color: #f5f4fa;
+	/*цвет текста  кнопки*/
+	--button-text: #fff;
+	/*цвет фона первой кнопик*/
+	--first-button-background: #2196f3;
+	/*цвет ховера первой кнопки*/
+	--first-button-hover-background: #188ce8;
+	/*цвет фона второй кнопки*/
+	--second-button-background: #2196f3;
+	/*цвет текста ховера второй кнопки*/
+	--second-button-hover-text: #212121;
+	/*цвет фона ховера второй кнопки*/
+	--second-button-hover-background: #f5f4fa;
+}
+
+/*Sass variables for fonts*/
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font20: 20px;
+$font26: 26px;
+$font44: 44px;
+$font20: 20px;
+$font36: 36px;

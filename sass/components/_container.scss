@@ -1,0 +1,39 @@
+/*параметры контейнера*/
+.container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*outline: 1px solid #000;*/
+}
+/*флекс контейнер*/
+.container--flex {
+	display: block;
+	max-width: 480px;
+
+	@media screen and(min-width:480px) {
+		width: 480px;
+	}
+	@media screen and(min-width:768px) {
+		width: 768px;
+	}
+	@media screen and(min-width:1200px) {
+		margin: 0 auto;
+		width: 1200px;
+		display: flex;
+		align-items: center;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container--list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

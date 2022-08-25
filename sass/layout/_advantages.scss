@@ -1,0 +1,31 @@
+/*section "our advantages"*/
+
+.advantages {
+	padding-top: 94px;
+}
+.advantages__flex-item {
+	width: 270px;
+	margin-right: 30px;
+	&:last-child {
+		margin-right: 0px;
+	}
+	/* outline: 1px solid black;*/
+}
+
+.advantages__description {
+	font-size: $font14;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+/*.caption (h3)*/
+
+.advantages__features {
+	font-weight: 700;
+	font-size: $font14;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+/*section "What are we doing*/
+
+.section-occupation {
+	padding-bottom: 94px;
+	/*outline: 1px solid tomato;*/
+}
+.section-occupation__section-title {
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: 700;
+	font-size: $font36;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.section-occupation__cover-header {
+	font-weight: 700;
+	font-size: $font14;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}

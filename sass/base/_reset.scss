@@ -1,0 +1,33 @@
+
+/* Указываем box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:hover,
+*:focus {
+  transition: width 0.5s, left 0.5s;
+}
+
+/* Убираем внутренние отступы */
+ul {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
