@@ -80,6 +80,21 @@ ol {
   padding-right: 15px;
   /*outline: 1px solid #000;*/
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 /*флекс контейнер*/
 .container--flex {
@@ -633,37 +648,59 @@ ol {
   background-color: var(--hero-footer-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: url(../images/header.background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header.background.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.background.jpg);
-  max-width: 100%;
   height: 400px;
 }
 @media screen and (min-width: 480px) {
   .hero {
-    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 480px;
+    /*	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);*/
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header.background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.background.jpg);
   }
 }
 
 .container--hero {
   text-align: center;
   max-width: 480px;
+}
+@media screen and (min-width: 480px) {
+  .container--hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--hero {
+    width: 1200px;
+  }
 }
 
 .hero__title {
