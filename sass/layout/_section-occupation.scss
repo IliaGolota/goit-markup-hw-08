@@ -2,7 +2,13 @@
 
 .section-occupation {
 	padding-bottom: 94px;
-	/*outline: 1px solid tomato;*/
+	display: none;
+	@include mobile {
+		display: none;
+	}
+	@include desktop {
+		display: block;
+	}
 }
 .section-occupation__section-title {
 	margin-bottom: 50px;
@@ -10,7 +16,6 @@
 	font-weight: 700;
 	font-size: $font36;
 	line-height: 1.17;
-	text-align: center;
 	letter-spacing: 0.03em;
 }
 

@@ -1,4 +1,5 @@
 /*section Hero*/
+
 .hero {
 	margin: 0 auto;
 	background-color: var(--hero-footer-color);
@@ -9,39 +10,57 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 400px;
-	@media screen and (min-width: 480px) {
+
+	@include retina {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero/hero-bg-mob-2x.jpg);
+	}
+	@include mobile {
 		width: 480px;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/hero/hero-bg-mob.jpg);
+		@include retina {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/hero-bg-mob-2x.jpg);
+		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		width: 768px;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/hero/hero-bg-tab.jpg);
+		@include retina {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/hero-bg-tab-2x.jpg);
+		}
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		width: 1200px;
 		padding-top: 200px;
 		padding-bottom: 200px;
 		height: 600px;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/hero/hero-bg-desktop.jpg);
+		@include retina {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/hero-bg-desktop-2x.jpg);
+		}
 	}
 }
 
 .container--hero {
+	margin: 0 auto;
 	text-align: center;
 	max-width: 480px;
 
-	@media screen and (min-width: 480px) {
+	@include mobile {
 		width: 480px;
 	}
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		width: 768px;
 	}
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		width: 1200px;
 	}
 }
@@ -56,11 +75,11 @@
 	text-transform: uppercase;
 	color: var(--white-color);
 
-	@media screen and (min-width: 480px) {
+	@include mobile {
 		font-size: 26px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		margin-top: 0;
 		font-size: $font44;
 		line-height: 1.36;
