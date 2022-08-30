@@ -5,9 +5,9 @@
 	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
- }
- 
- .section-team__profession {
+}
+
+.section-team__profession {
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 	font-size: $font16;
@@ -15,25 +15,38 @@
 	text-align: center;
 	margin-bottom: 16px;
 	margin-top: 10px;
- }
+}
 
- /*section-title (h2)*/
+/*section-title (h2)*/
 .section-title {
 	font-weight: 700;
 	font-size: $font36;
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
- }
- 
- .section-title--team {
-	margin-bottom: 50px;
- }
- 
- .caption.projects {
+}
+
+.section-title--team {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 30px;
+	@include tablet {
+		font-size: 28px;
+		line-height: 33px;
+	}
+	@include desktop {
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 50px;
+	}
+}
+
+.caption.projects {
 	font-weight: 700;
 	font-size: $font18;
 	line-height: 2;
 	letter-spacing: 0.06em;
- }
- 
+}
