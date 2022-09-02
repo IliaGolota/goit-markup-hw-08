@@ -2,6 +2,9 @@
 .section-team__img {
 	/*margin-right: 30px;*/
 	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 .section-team__img:last-child {
@@ -9,12 +12,16 @@
 }
 
 .section-occupation__img {
-	margin-right: 30px;
 	display: block;
 }
 
 .section-occupation__item-cover {
 	position: relative;
+	margin-right: 30px;
+}
+
+.section-occupation__item-cover:last-child {
+	margin-right: 0;
 }
 
 .section-occupation__cover {

@@ -1,23 +1,24 @@
-
 .logo {
 	font-family: "Raleway";
 	font-style: normal;
-	font-weight: 700;
-	font-size: $font26;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	color: var(--accent-color);
 	text-decoration: none;
+	color: var(--accent-color);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: calc(28 / 24);
+	text-align: center;
+	letter-spacing: 0.03em;
+	@include desktop {
+		font-size: $font26;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+	}
+}
 
-	
- }
-
- 
- 
- .logo__studio {
+.logo__studio {
 	color: var(--black-color);
- }
- 
- .logo__studio--white {
+}
+
+.logo__studio--white {
 	color: var(--white-color);
- }
+}
