@@ -26,7 +26,6 @@
 
 .portfolio-nav__button {
 	height: 38px;
-	margin-right: 8px;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -90,4 +89,64 @@
 .second-submit:hover,
 .second-submit:focus {
 	background-color: #188ce8;
+}
+
+/*page header button*/
+.menu-open {
+	display: grid;
+	border: none;
+	margin-left: auto;
+	padding: 0;
+	background-color: #fff;
+	@include tablet {
+		display: none;
+	}
+}
+
+.menu-close {
+	display: grid;
+	border: none;
+	padding: 0;
+	margin-left: auto;
+	background-color: #fff;
+	fill: #000;
+}
+
+.menu-close:hover,
+.menu-close:focus {
+	fill: #188ce8;
+}
+
+.menu-button {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	margin-left: auto;
+}
+
+.menu-button .icon-cross {
+	display: none;
+}
+
+.menu-button.is-open .icon-cross {
+	display: block;
+}
+
+.menu-button.is-open .icon-menu {
+	display: none;
+}
+
+.svg-close {
+	fill: #000;
+}
+.svg-close:hover,
+.svg-close:focus {
+	fill: #188ce8;
+}
+
+.icon-cross {
 }

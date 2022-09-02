@@ -21,14 +21,14 @@
 
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
+  <div class="container container--flex">
   <body>
-    <!-- <header class="page-header">
-      <div class="container container--flex">
-        <a class="logo header__logo" href="#" lang="en"
-          >Web<span class="logo__studio">Studio</span></a
-        >
-
+    <header class="page-header">
+		<div class="container container--header">
         <nav class="menu">
+				<a class="logo header__logo" href="#" lang="en"
+				  >Web<span class="logo__studio">Studio</span></a
+				>
           <ul class="menu__list list">
             <li class="menu__item">
               <a class="menu__link menu__link--current" href="">Студія</a>
@@ -60,13 +60,94 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>
+			</ul>
+          <button
+            type="button"
+            class="menu-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="перемикач мобільного меню"
+            >
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        
+		  
+
+        <div class="mob-menu is-hidden" id="mob-menu" data-menu>
+			<div class="container container__mob-menu">
+				<div class="mob-menu-top">
+          <button
+            type="button"
+            class="menu-close"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="svg-close"
+              width="40px"
+              height="40px"
+              aria-label="перемикач мобільного меню"
+            >
+              <use class="icon-cross" href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Студія</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+			</div>
+			<div class="mob-menu-bottom">
+          <ul class="mob__contacts">
+            <li class="mob__item">
+              <a class="mob__link--tel list" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+				<li class="mob__item mob__item--nav">
+					<a class="mob__link mob__link--envelope" href="mailto:info@devstudio.com"
+					  >
+					  info@devstudio.com
+					</a>
+				 </li>
+          </ul>
+          <ul class="mob-soc__flex-network">
+            <li class="mob-soc__item-network">
+              <a class="mob-soc__link-network" href="">Instagram</a>
+            </li>
+            <li class="mob-soc__item-network">
+              <a class="mob-soc__link-network" href="">Twitter</a>
+            </li>
+            <li class="mob-soc__item-network">
+              <a class="mob-soc__link-network" href="">Facebook</a>
+            </li>
+            <li class="mob-soc__item-network">
+              <a class="mob-soc__link-network" href="">LinkedIn</a>
+            </li>
+          </ul>
+			</div>
+			</div>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!--Hero-->
-      <!-- <section class="hero">
+       <section class="hero">
         <div class="container--hero">
           <h1 class="hero__title">
             Еффективні рішення для<br />
@@ -74,9 +155,9 @@
           </h1>
           <button type="button" class="btn__primary" data-modal-open>
             Замовити послугу
-          </button> -->
+          </button>-->
       <!--Backdrop + modal-->
-      <!-- <div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
             <div class="modal">
               <div class="modal__container">
                 <button
@@ -170,13 +251,13 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
-      </section> -->
+      </section> 
 
       <!--Our Advantages-->
 
-      <!-- <section class="advantages">
+      <section class="advantages">
         <div class="advantages-container">
           <h2 class="section-title" hidden>Наші переваги</h2>
           <ul class="advantages-container__list">
@@ -289,7 +370,7 @@
 
       <!--Our Team-->
 
-      <section class="section-team">
+      <!-- <section class="section-team">
         <div class="container">
           <h2 class="section-title section-title--team">Наша команда</h2>
           <ul class="list team-container">
@@ -441,7 +522,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- <section class="section-clients section">
         <div class="container-clients">
@@ -570,5 +651,6 @@
     </footer>
 	  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
