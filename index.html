@@ -329,7 +329,7 @@
             </li>
             <li class="section-occupation__item-cover">
               <div class="section-occupation__image-cover">
-                <img
+                <img 
                   srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
                   class="section-occupation__img"
                   src="./images/phone.jpg 1x,"
@@ -369,12 +369,24 @@
           <h2 class="section-title section-title--team">Наша команда</h2>
           <ul class="list team-container">
             <li class="section-team__item-team">
-              <img
-                class="section-team__img"
-                src="./images/igor-photo.jpg"
-                alt="фото игоря"
-                width="270"
-              />
+					<picture>
+						<source srcset="./images/igor-photo-1.jpg 1x, 
+											./images/igor-photo-1-2x.jpg 2x "
+											media="(min-width:1200px)">
+						<source srcset="./images/igor-photo-1-tab.jpg 1x, 
+											./images/igor-photo-1-tab-2x.jpg "
+											media="(min-width:768px)">	
+						<source srcset="./images/igor-photo-1-mob.jpg 1x, 
+											./images/igor-photo-1-mob-2x.jpg 2x "
+											media="(max-width:479px)">	
+											<img 
+											class="section-team__img"
+											src="./images/igor-photo-1.jpg"
+											alt="фото игоря"
+											width="270"
+										 />		
+					</picture>
+             
               <h3 class="section-team__name">Ігор Дем'яненко</h3>
               <p lang="en" class="section-team__profession">Product Designer</p>
               <ul class="section-team__flex-network">
@@ -405,12 +417,25 @@
               </ul>
             </li>
             <li class="section-team__item-team">
-              <img
-                class="section-team__img"
-                src="./images/olga-photo.jpg"
-                alt="фото ольги"
-                width="270"
-              />
+					<picture>
+						<source srcset="./images/olga-photo-1.jpg 1x, 
+											./images/olga-photo-1-2x.jpg 2x "
+											media="(min-width:1200px)">
+					 
+						<source srcset="./images/olga-photo-1-tab.jpg 1x, 
+											./images/olga-photo-1-tab-2x.jpg "
+											media="(min-width:768px)">	
+						<source srcset="./images/olga-photo-1-mob.jpg 1x, 
+											./images/olga-photo-1-mob-2x.jpg 2x "
+											media="(max-width:479px)">	
+											<img 
+											class="section-team__img"
+											src="./images/olga-photo-1.jpg"
+											alt="фото игоря"
+											width="270"
+										 />		
+					</picture>
+ 
               <h3 class="section-team__name">Ольга Рєпіна</h3>
               <p lang="en" class="section-team__profession">
                 Frontend Developer
@@ -443,12 +468,23 @@
               </ul>
             </li>
             <li class="section-team__item-team">
-              <img
-                class="section-team__img"
-                src="./images/nikolay-photo.jpg"
-                alt="фото николая"
-                width="270"
-              />
+					<picture>
+						<source srcset="./images/nikolay-photo-1.jpg 1x, 
+											./images/nikolay-photo-1-2x.jpg 2x "
+											media="(min-width:1200px)">
+						<source srcset="./images/nikolay-photo-1-tab.jpg 1x, 
+											./images/nikolay-photo-1-tab-2x.jpg "
+											media="(min-width:768px)">	
+						<source srcset="./images/nikolay-photo-1-mob.jpg 1x, 
+											./images/nikolay-photo-1-mob-2x.jpg 2x "
+											media="(max-width:479px)">	
+											<img 
+											class="section-team__img"
+											src="./images/nikolay-photo-1.jpg"
+											alt="фото игоря"
+											width="270"
+										 />		
+					</picture>
               <h3 class="section-team__name">Микола Тарасов</h3>
               <p lang="en" class="section-team__profession">Marketing</p>
               <ul class="section-team__flex-network">
@@ -479,12 +515,23 @@
               </ul>
             </li>
             <li class="section-team__item-team">
-              <img
-                class="section-team__img"
-                src="./images/mihail-photo.jpg"
-                alt="фото михаила"
-                width="270"
-              />
+					<picture>
+						<source srcset="./images/mihail-photo-1.jpg 1x, 
+											./images/mihail-photo-1-2x.jpg 2x "
+											media="(min-width:1200px)">
+						<source srcset="./images/mihail-photo-1-tab.jpg 1x, 
+											./images/mihail-photo-1-tab-2x.jpg "
+											media="(min-width:768px)">	
+						<source srcset="./images/mihail-photo-1-mob.jpg 1x, 
+											./images/mihail-photo-1-mob-2x.jpg 2x "
+											media="(max-width:479px)">
+											<img 
+											class="section-team__img"
+											src="./images/mihail-photo-1.jpg"
+											alt="фото игоря"
+											width="270"
+										 />			
+					</picture>
               <h3 class="section-team__name">Михайло Єрмаков</h3>
               <p lang="en" class="section-team__profession">UI Designer</p>
               <ul class="section-team__flex-network">

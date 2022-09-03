@@ -109,8 +109,12 @@
 }
 
 .third-column {
+	@include tablet {
+		margin-top: 60px;
+	}
 	@include desktop {
 		margin-left: 93px;
+		margin-top: 0;
 	}
 }
 
