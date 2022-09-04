@@ -58,7 +58,10 @@
 }
 
 .section-title--client {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	@include desktop {
+		margin-bottom: 50px;
+	}
 }
 
 .section-clients__list {

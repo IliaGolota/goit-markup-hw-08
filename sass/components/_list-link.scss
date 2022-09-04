@@ -1,17 +1,21 @@
-
 /*li, links, buttons*/
 .list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
- }
- 
- .list .link {
+}
+
+.list .link {
 	text-decoration: none;
 	font-weight: 500;
 	font-size: $font14;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
- }
- 
+}
+
+.list-tel {
+	list-style: none;
+	margin-bottom: 32px;
+	padding: 0;
+}

@@ -111,10 +111,16 @@
 	font-size: $font14;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	font-size: 12px;
+	line-height: calc(14 / 12);
 	color: var(--primary-text-color);
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+	@include desktop {
+		font-size: $font14;
+		line-height: 1.14;
 	}
 }
 
@@ -205,6 +211,7 @@
 
 .mob__item {
 	list-style-type: none;
+	margin-bottom: 32px;
 }
 
 .mob__item--nav {

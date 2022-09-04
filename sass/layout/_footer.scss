@@ -2,8 +2,6 @@
 
 .page-footer {
 	background-color: var(--hero-footer-color);
-	padding-left: 15px;
-	padding-right: 15px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
@@ -21,7 +19,6 @@
 	padding: 0;
 	@include tablet {
 		margin: 0;
-		display: block;
 	}
 }
 
@@ -119,9 +116,9 @@
 }
 
 .footer-form__input {
+	width: 300px;
 	margin-bottom: 20px;
 	color: #fff;
-	width: 358px;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
@@ -139,8 +136,13 @@
 		letter-spacing: 0.03em;
 		color: rgba(255, 255, 255, 0.6);
 	}
-	@include tablet {
+	@include mobile {
+		width: 450px;
+	}
+
+	@include desktop {
 		margin-bottom: 0;
+		width: 358px;
 	}
 }
 
@@ -148,6 +150,11 @@
 	display: block;
 	@include tablet {
 		display: flex;
+		flex-direction: column;
+	}
+	@include desktop {
+		display: flex;
+		flex-direction: row;
 	}
 }
 
@@ -167,7 +174,7 @@
 
 	border: none;
 	letter-spacing: 0.06em;
-	@include tablet {
+	@include desktop {
 		margin-left: 12px;
 	}
 }

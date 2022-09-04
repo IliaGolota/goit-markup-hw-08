@@ -29,10 +29,15 @@
 .modal {
 	transform: scale(1);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	width: 528px;
-	height: 581px;
 	background-color: #fff;
 	padding: 40px;
+	width: 450px;
+	height: 609px;
+
+	@include desktop {
+		width: 528px;
+		height: 581px;
+	}
 }
 
 .modal__container {
@@ -48,7 +53,10 @@
 	font-size: inherit;
 	display: flex;
 	flex-direction: column;
-	width: 448px;
+	width: 367px;
+	@include desktop {
+		width: 448px;
+	}
 }
 
 .form__input {
