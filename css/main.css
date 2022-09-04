@@ -446,7 +446,8 @@ svg {
 
 .section-team__link-network:hover,
 .section-team__link-network:focus {
-  fill: #2196f3;
+  fill: #fff;
+  background-color: #2196f3;
 }
 
 .section-title--client {
@@ -643,15 +644,15 @@ svg {
 /*section-title (h2)*/
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section-title {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -1449,6 +1450,12 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-nav__list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1845,10 +1852,18 @@ svg {
   display: inline-block;
   /* padding-left: 7px;*/
   margin-top: 20px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .checkbox {

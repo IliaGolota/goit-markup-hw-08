@@ -23,6 +23,10 @@
 	gap: 8px;
 	@include tablet {
 		justify-content: center;
+		margin-bottom: 30px;
+	}
+	@include desktop {
+		margin-bottom: 50px;
 	}
 }
 
